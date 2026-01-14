@@ -5,48 +5,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Neemz Dentistry | Best Dental Clinic in Salem | Award-Winning Care</title>
-    <meta name="description" content="Looking for the best dentist in Salem? Dr. Neemz Dentistry offers award-winning braces, dental implants, root canals, and pediatric care. Book your free consultation today!" />
-    <meta name="keywords" content="Dentist in Salem, Dental Clinic Salem, Braces cost Salem, Root canal specialist Salem, Dr Neemz Salem" />
+    <meta name="description" content="Voted #1 Dental Clinic in Salem. Dr. Neemz Dentistry offers award-winning braces, dental implants, and painless root canals. Book your free consultation today and get ₹5000 OFF!" />
+    <meta name="keywords" content="Best Dentist in Salem, Dental Clinic Salem, Braces cost Salem, Root canal Salem, Dr Neemz Salem, Invisalign Salem" />
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Dr. Neemz Dentistry - Salem's Premier Dental Clinic" />
-    <meta property="og:description" content="Award-winning dental care in the heart of Salem. Specializing in braces, implants, and painless dentistry." />
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Dr. Neemz Dentistry - Salem's Premier Dental Hub" />
+    <meta property="og:description" content="Award-winning dental care in Salem. Painless treatments and expert specialists. Claim your ₹5000 discount today!" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dr-neemz-dentistry.vercel.app/" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200" />
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Performance & Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema (CRITICAL FOR SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Dr. Neemz Dentistry",
+      "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1200",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No 29, Peramanur Main Rd, opp. Kavery Furniture",
+        "addressLocality": "Salem",
+        "addressRegion": "TN",
+        "postalCode": "636007",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 11.6643,
+        "longitude": 78.1460
+      },
+      "url": "https://dr-neemz-dentistry.vercel.app/",
+      "telephone": "+917448560350",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "21:00"
+        }
+      ],
+      "priceRange": "$$"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+        "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+      }
+    }
+    </script>
     <style>
-      body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-      }
-      .gradient-hero {
-        background: radial-gradient(circle at top right, #f0fdf4 0%, #ffffff 100%);
-      }
-      .card-shadow {
-        box-shadow: 0 10px 50px -12px rgba(0, 0, 0, 0.05);
-      }
-      .btn-hover {
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .btn-hover:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 15px 30px -10px rgba(22, 163, 74, 0.3);
-      }
+      body { font-family: 'Plus Jakarta Sans', sans-serif; }
+      .gradient-hero { background: radial-gradient(circle at top right, #f0fdf4 0%, #ffffff 100%); }
+      .btn-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+      .btn-hover:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -10px rgba(22, 163, 74, 0.3); }
+      .glass-morphism { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
-</head>
+  </head>
   <body class="bg-slate-50 text-slate-900 selection:bg-green-100 selection:text-green-900">
     <div id="root"></div>
   </body>
