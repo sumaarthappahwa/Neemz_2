@@ -20,8 +20,8 @@ import {
   Facebook,
   Sparkles
 } from 'lucide-react';
-import { SERVICES, FAQS, CONTACT_INFO, TESTIMONIALS } from './constants';
-import { getDentalAdvice } from './services/geminiService';
+import { SERVICES, FAQS, CONTACT_INFO, TESTIMONIALS } from './constants.tsx';
+import { getDentalAdvice } from './services/geminiService.ts';
 
 // --- Subcomponents ---
 
