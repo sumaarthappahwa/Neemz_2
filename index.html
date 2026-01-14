@@ -4,13 +4,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. Neemz Dentistry | Best Dental Clinic in Salem | Award-Winning Care</title>
-    <meta name="description" content="Voted #1 Dental Clinic in Salem. Dr. Neemz Dentistry offers award-winning braces, dental implants, and painless root canals. Book your free consultation today and get ₹5000 OFF!" />
+    <title>Dr. Neemz Dentistry | Salem's #1 Rated Dental Clinic</title>
+    <meta name="description" content="Award-winning dental care in Salem. Specializing in braces, implants, and painless root canals. Book now and get ₹5000 OFF your treatment!" />
     
-    <!-- Performance & Fonts -->
+    <!-- Professional Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="importmap">
@@ -28,15 +28,46 @@
 </script>
     
     <style>
-      body { font-family: 'Plus Jakarta Sans', sans-serif; }
-      .gradient-hero { background: radial-gradient(circle at top right, #f0fdf4 0%, #ffffff 100%); }
-      .btn-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-      .btn-hover:hover { transform: translateY(-2px); box-shadow: 0 15px 30px -10px rgba(22, 163, 74, 0.3); }
+      :root {
+        --brand-green: #10b981;
+        --brand-dark: #0f172a;
+      }
+      body { 
+        font-family: 'Plus Jakarta Sans', sans-serif; 
+        overflow-x: hidden;
+      }
+      .gradient-bg {
+        background: radial-gradient(circle at 0% 0%, #f0fdf4 0%, #ffffff 50%, #f8fafc 100%);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .btn-primary {
+        background-color: var(--brand-green);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 25px -5px rgba(16, 185, 129, 0.2);
+      }
+      .shimmer {
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite;
+      }
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      details[open] summary svg {
+        transform: rotate(90deg);
+      }
     </style>
   </head>
-  <body class="bg-slate-50 text-slate-900 selection:bg-green-100 selection:text-green-900">
+  <body class="bg-white text-slate-900">
     <div id="root"></div>
-    <!-- Explicitly load the entry point -->
     <script type="module" src="index.tsx"></script>
   </body>
 </html>
